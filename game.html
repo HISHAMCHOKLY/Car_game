@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./carcss.css">
+    <title>Game</title>
+</head>
+<body id="body" onload="all()">
+    <div class="fullbody" id="gameover">
+        <div class="row">
+            <div class="col-3">
+                <span class="dist">DISTANCE:</span>
+                <span class="dist" id="distance"></span>
+                <button class="btn btn-success btn-block" type="button" id="btn" onclick="forreload()">RESTART</button>
+                <img src="./grass.jpg" alt="" class="grass">
+            </div>
+            <div class="col-6 road" >
+                
+                <div class="row">
+                    <div class="col-12">
+                    
+                        <img class="block1" src="./newcar.png" id="block1" ></img>
+                    
+                   
+                        <img class="block2" id="block2" src="./oposit.png"></img>
+                    
+                    
+                        <img class="block3" src="./newcar.png" id="block3" ></img>
+                    
+                    
+                        <img class="block4" src="./oposit.png" id="block4"></img>
+                    </div>    
+                    
+
+                </div>
+               <img src="./pngfind.com-race-car-png-1686598.png" alt="" class="car" id="car">
+            </div>
+            <div class="col-3">
+                <span class="dist">TIME:</span>
+                <span class="dist" id="time"></span>
+                
+                <img src="./grass.jpg" alt="" class="grass">
+
+            </div>
+        </div>
+    </div>
+<script src="./carjs.js"></script>    
+</body>
+</html>
